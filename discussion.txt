@@ -1,0 +1,58 @@
+Runtime
+
+Q. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+A. The number of crackers in the box.
+
+
+Q. Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity:
+
+A.
+slowest
+O(n2)
+O(n log n)
+O(n) == O(2n)
+O(log n)
+O(1)
+fastest
+
+
+Stacks and Queues
+
+Q. The process of loading and unloading pallets onto a flatbed truck
+A. A stack
+
+Q. Putting bottle caps on bottles of beer as they roll down an assembly line
+A. A queue
+
+Q. Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+A. A stack
+
+Q. Describe two more situations where a queue would be an appropriate data structure.
+A. 
+
+Q. Describe two more situations where a stack would be an appropriate data structure.
+A. Checking if a word is a palindrome and storing browser history
+
+
+Linked Lists
+
+Q. Given the linked list below, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+A. The nodes are the pairs of boxes with a piece of text on the left (the data) and the word "next" and an arrow on the right. The head of the list is the node that contains the word "Apple", which the linked list's head attribute points to. The tail of the list is the node that points to None, in this case "Cherry".
+
+Q. What’s the difference between doubly- and singly-linked lists?
+A. The list above is an example of a singly-linked list, each node keeps track of it's data as well as a pointer to the next item in the list. Doubly-linked lists keep track of all of that as well as the previous node in the list.
+
+Q. Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+A. If you don't keep track of it, you would have to traverse through the entire list before being able to know which node is the last node (O(n)). Keeping track of it means appending has a constant runtime tail.next = new_node.
+
+
+Trees
+
+Q. Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burritos (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+A. Italian, Indian, Mexican, lasagna, pizza, tikka masala, saag, BURRITOS!
+
+Q. Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+A. Italian, lasagna, pizza, thin-crust, CHICAGO-STYLE!
+
+Q. How is a binary search tree different from other trees?
+A. A binary search tree is a tree (where each node can only have 2 children) that has been optimized for searching. At each node, you can eliminate half of the options by checking if the thing you're searching for is greater or smaller than where you currently are, giving it a runtime of O(log n)
